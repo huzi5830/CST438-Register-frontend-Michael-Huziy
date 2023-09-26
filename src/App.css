@@ -80,3 +80,35 @@ input:focus {
   outline: 1px solid #ccc;
   border: 1px solid #ccc;
 }
+
+.custom-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+#dropbtn{
+  background-color: red ;/* Button background color */
+  color: #fff; /* Text color */
+  border: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px; 
+}
+
+#actions{
+  display: flex;
+  justify-content: center;
+}
+
+#content{
+  padding-top: 20px;
+}
+#content .dialog-input {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+
