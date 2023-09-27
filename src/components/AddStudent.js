@@ -55,11 +55,17 @@ function AddStudent(props) {
   const handleAdd = () =>{
     if ( isValidEmail(student.email)){
         console.log("Valid")
+        setOpen(false);
         props.addStudent(student);
     }
     else{
         console.log("invalid")
         setValid(false)
+        const heading = document.querySelector("#msg");
+
+        setTimeout(() => {
+            setValid(true);
+          }, 3000);
     }
     //console.log(student.name)
     //const newStudent = JSON.parse(JSON.stringify(student));
@@ -68,9 +74,8 @@ function AddStudent(props) {
 
   return (
       <div>
-        <button id="addStudent" className="custom-button" onClick={handleClickOpen}>
-          Add New Student
-        </button>
+        <button id="custom-button"  onClick={handleClickOpen}>
+          Add New Student </button>
         <Dialog open={open} onClose={handleClose}>
             <DialogTitle style={{ textAlign:'center'}}>Add student</DialogTitle>
 
@@ -79,7 +84,7 @@ function AddStudent(props) {
             <TextField className="dialog-input" label="Email" name="email"onChange={handleChange}  /> <br></br>
             <TextField className="dialog-input" label="Status Code" name="statusCode" onChange={handleChange}  /> <br></br>
             <TextField className="dialog-input" label="Status " name="status" onChange={handleChange}  /> 
-            {valid ? null : <h5 style={{color:'red'}}>Email is of invalid format</h5>}
+            {valid ? null : <h5 id="msg"class="appear"style={{color:'red'}}>Email is of invalid format</h5>}
             </DialogContent>
 
             <DialogActions>

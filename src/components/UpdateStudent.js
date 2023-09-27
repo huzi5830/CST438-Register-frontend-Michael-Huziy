@@ -48,7 +48,7 @@ function UpdateStudent(props) {
 
   return (
       <div>
-        <button id="updateStudent" className="custom-button"onClick={handleClickOpen}>
+        <button id="custom-button"onClick={handleClickOpen}>
           Update Student
         </button>
         <Dialog open={open} onClose={handleClose}>
@@ -63,8 +63,8 @@ function UpdateStudent(props) {
             </DialogContent>
 
             <DialogActions>
-              <Button color="secondary" onClick={handleClose}>Cancel</Button>
-              <Button color="secondary" onClick={handleUpdate}>Submit</Button>
+              <button id="dialogBtnCancel" onClick={handleClose}>Cancel</button>
+              <button id="dialogBtnSubmit" onClick={handleUpdate}>Submit</button>
             </DialogActions>
           </Dialog>      
       </div>

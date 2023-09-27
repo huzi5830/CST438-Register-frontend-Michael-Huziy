@@ -36,7 +36,7 @@ const AdminHome = ()  => {
     const dropStudent = (id, name) => {
       console.log("INSIDE DELETE")
       console.log(id)
-      if (window.confirm("WARNING: Are you sure you want to delete student: " + name + " from the list?") ){
+      if (window.confirm("WARNING: Are you sure you want to delete \"" + name + "\" from the list?") ){
         console.log("Deleting student")
         fetch(`http://localhost:8080/deleteStudent/${id}`,
         {
