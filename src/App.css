@@ -80,3 +80,67 @@ input:focus {
   outline: 1px solid #ccc;
   border: 1px solid #ccc;
 }
+
+#custom-button {
+  background-color: #007bff; 
+  color: white; 
+  border: 8px;
+  font-size: medium;
+  padding:  8px;
+  cursor: pointer;
+  border-radius: 4px; 
+}
+
+#dropbtn{
+  background-color: red ;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  border: 8px;
+  padding: 8px;
+  border-radius: 4px; 
+}
+
+#actions{
+  display: flex;
+  justify-content: center;
+}
+
+#content{
+  padding-top: 5px;
+}
+#content .dialog-input {
+  margin-bottom: 10px; 
+}
+
+#dialogBtnCancel{
+  background-color: #0676ec; 
+  color: black; 
+  border: 8px;
+  font-size: medium;
+  padding:  8px;
+  cursor: pointer;
+  border-radius: 4px; 
+  
+}
+
+#dialogBtnSubmit{
+  background-color: #4fd600; 
+  color: black; 
+  border: 8px;
+  font-size: medium;
+  padding:  8px;
+  cursor: pointer;
+  border-radius: 4px; 
+}
+
+.appear {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.appear.appearing {
+  opacity: 0;
+}
+
+
