@@ -8,7 +8,7 @@ const AdminHome = ()  => {
     useEffect(() => {
         // called once after intial render
         fetchStudents();
-        }, [students] )
+        }, [] )
 
     const updateStudent = (student) => {
       console.log(student)
@@ -89,6 +89,7 @@ const AdminHome = ()  => {
       .then(res => {
           if (res.ok) {
           console.log("addStudentok");
+          fetchStudents();
           } else {
           console.log('error addStudent' + res.status);
           }})

@@ -20,7 +20,7 @@ function UpdateStudent(props) {
     if (!open) {
       setStudent(props.student);
     }
-  }, [open, props.student]);
+  }, [open]);
   
   const handleClickOpen = () => {
     setOpen(true);
