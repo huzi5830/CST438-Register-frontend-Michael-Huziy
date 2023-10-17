@@ -89,7 +89,7 @@ function AddStudent(props) {
 
             <DialogActions>
               <Button color="secondary" onClick={handleClose}>Cancel</Button>
-              <Button color="secondary" onClick={handleAdd}>Add Student</Button>
+              <Button id = "addStudentBtn"color="secondary" onClick={handleAdd}>Add Student</Button>
             </DialogActions>
           </Dialog>      
       </div>

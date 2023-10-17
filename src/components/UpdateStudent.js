@@ -48,7 +48,7 @@ function UpdateStudent(props) {
 
   return (
       <div>
-        <button id="custom-button"onClick={handleClickOpen}>
+        <button name="updateBtn"id="custom-button"onClick={handleClickOpen}>
           Update Student
         </button>
         <Dialog open={open} onClose={handleClose}>
