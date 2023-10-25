@@ -143,4 +143,12 @@ input:focus {
   opacity: 0;
 }
 
+#loginTable{
+  border:30px;
+  margin:20px;
+  display: flex;
+  justify-content: center;
+
+}
+
 
